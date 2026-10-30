@@ -914,4 +914,36 @@ body:not(:has(:target)) .nav-menu a[href="#hero"]::after {
         gap: 12px;
         text-align: center;
     }
+      .about-contact-section,
+    .about-contact-grid,
+    .info-card,
+    .about-card,
+    .contact-card {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .about-contact-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .info-card {
+        padding: 24px 18px;
+        overflow-wrap: break-word;
+    }
+
+    .contact-details li {
+        min-width: 0;
+        flex-wrap: wrap;
+    }
+
+    .contact-text {
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .contact-text .val {
+        overflow-wrap: anywhere;
+    }
 }
